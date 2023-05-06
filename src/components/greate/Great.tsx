@@ -1,9 +1,12 @@
 import React from "react";
-type GreatProps ={
-    name?:string
-}
-function Great(props:GreatProps) {
-  return <div>Hello {props.name}</div>;
+import { GreatProps } from "./greet.types";
+
+function Great(props: GreatProps) {
+  return (
+    <>
+      <div>Hello {props.name ? props.name : "Guest"}</div>
+    </>
+  );
 }
 
 export default Great;
