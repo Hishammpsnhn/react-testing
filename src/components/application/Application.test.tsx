@@ -15,6 +15,11 @@ describe('application ', () => {
         })
         expect(Heading1Element).toBeInTheDocument()
 
+        const InputText = screen.getByLabelText('Name',{
+            selector: 'input'
+        })
+        expect(InputText).toBeInTheDocument()
+
         const nameElement = screen.getByRole('textbox', {
             name: 'Name'
         });
@@ -27,6 +32,9 @@ describe('application ', () => {
 
         const jobLocationElement = screen.getByRole('combobox');
         expect(jobLocationElement).toBeInTheDocument()
+
+        const CheckBox = screen.getByLabelText('I agree to the terms and conditions')
+        expect(CheckBox).toBeInTheDocument()
 
         const checkbox = screen.getByRole('checkbox');
         expect(checkbox).toBeInTheDocument()
