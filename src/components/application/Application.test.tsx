@@ -15,6 +15,9 @@ describe('application ', () => {
         })
         expect(Heading1Element).toBeInTheDocument()
 
+        const paragraph = screen.getByText('All fields are mandatory')
+        expect(paragraph).toBeInTheDocument()
+
         const InputText = screen.getByLabelText('Name',{
             selector: 'input'
         })
