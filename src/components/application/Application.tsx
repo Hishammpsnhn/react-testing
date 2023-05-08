@@ -13,6 +13,7 @@ export const Application = () => {
             <input
               type="text"
               id="name"
+              placeholder="Fullname"
             />
           </div>
           <div>
