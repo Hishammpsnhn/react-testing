@@ -15,8 +15,14 @@ describe('application ', () => {
         })
         expect(Heading1Element).toBeInTheDocument()
 
+        const Heading1Element3 = screen.getByDisplayValue('hisham')
+        expect(Heading1Element3).toBeInTheDocument()
+
         const paragraph = screen.getByText('All fields are mandatory')
         expect(paragraph).toBeInTheDocument()
+
+        const image = screen.getByAltText("a person with a laptop")
+        expect(image).toBeInTheDocument()
 
         const InputText = screen.getByLabelText('Name',{
             selector: 'input'
