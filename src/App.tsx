@@ -8,7 +8,7 @@ const skills = ["HTML", "CSS", "JS"]
 function App() {
   return (
     <div className="App">
-      {/* <Application /> */}
+      <Application />
       <Skills skills={skills} />
     </div>
   );
