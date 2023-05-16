@@ -8,7 +8,6 @@ describe('application', () => {
     const HeadingElement = screen.getByRole('heading', {
       level: 1,
     })
-
     expect(HeadingElement).toBeInTheDocument()
 
     const Heading1Element = screen.getByRole('heading', {
@@ -61,6 +60,6 @@ describe('application', () => {
     expect(checkbox).toBeInTheDocument()
 
     const button = screen.getByRole('button')
-    expect(button).not.toBeEnabled()
+    expect(button).toBeDisabled()
   })
 })
