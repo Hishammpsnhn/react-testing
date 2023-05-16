@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 // import logo from './logo.svg';
-import './App.css';
+import './App.css'
 // import { Application } from './components/application/Application';
 // import { Skills } from './components/skills/Skills';
 // import Counter from './components/counter/Counter';
-import { AppProviders } from './providers/AppProviders';
+import { AppProviders } from './providers/AppProviders'
 // import { MuiMode } from './components/mui/MuiMode';
 // import { CounterTwo } from './components/counter-two/Counter-two';
-import { Users } from './components/users/Users';
+import { Users } from './components/users/Users'
 
 // const skills = ["HTML", "CSS", "JS"]
 function App() {
@@ -21,10 +21,10 @@ function App() {
         <Users /> */}
         {/* <MuiMode /> */}
         {/* <CounterTwo count={1}/> */}
-        <Users/>
+        <Users />
       </div>
     </AppProviders>
-  );
+  )
 }
 
-export default App;
+export default App

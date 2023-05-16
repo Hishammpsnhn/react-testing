@@ -1,3 +1,3 @@
 export type GreatProps = {
-    name?: string
-  }
+  name?: string
+}

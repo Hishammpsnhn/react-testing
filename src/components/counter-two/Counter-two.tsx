@@ -1,8 +1,7 @@
 import { CounterTwoProps } from './Counter-two.types'
 
 export const CounterTwo = (props: CounterTwoProps) => {
-    
-    console.log(props.handleIncrement)
+  console.log(props.handleIncrement)
   return (
     <div>
       <h1>Counter Two</h1>
