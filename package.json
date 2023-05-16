@@ -13,6 +13,7 @@
     "@types/node": "^16.18.25",
     "@types/react": "^18.2.5",
     "@types/react-dom": "^18.2.3",
+    "eslint-plugin-jest-dom": "^4.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -23,13 +24,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "eslint --ignore-path .gitignore .",
     "eject": "react-scripts eject",
     "coverage": "npm test -- --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}' --collectCoverageFrom='!src/components/**/*.{types,stories,constant,test,spec}.{ts,tsx}'"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:jest-dom/recommended"
     ]
   },
   "browserslist": {

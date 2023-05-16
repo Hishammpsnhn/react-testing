@@ -4,12 +4,12 @@ import { server } from "../../mocks/server"
 import { rest } from "msw"
 
 describe("users", () => {
-    test("render users", () => {
+    test("render user", () => {
         render(<Users />)
         const HeadingElement = screen.getByText('Users')
         expect(HeadingElement).toBeInTheDocument()
     })
-    test("render users ", async () => {
+    test("render Users", async () => {
         render(<Users />)
         const users = await screen.findAllByRole('listitem')
         expect(users).toHaveLength(3)

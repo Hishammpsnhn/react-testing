@@ -3,12 +3,12 @@ import { CounterTwo } from "./Counter-two"
 import user from "@testing-library/user-event"
 
 describe("counter-two", () => {
-    test(" counter render correctly", () => {
+    test("counter render correctly", () => {
         render(<CounterTwo count={1} />)
         const HeadingElement = screen.getByRole('heading')
         expect(HeadingElement).toHaveTextContent("Counter Two")
     })
-    test(" Handler render correctly",async () => {
+    test("Handler render correctly",async () => {
         user.setup()
         const incHandler = jest.fn();
         const decHandler = jest.fn();

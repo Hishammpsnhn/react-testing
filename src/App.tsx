@@ -1,15 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { Application } from './components/application/Application';
-import { Skills } from './components/skills/Skills';
-import Counter from './components/counter/Counter';
+// import { Application } from './components/application/Application';
+// import { Skills } from './components/skills/Skills';
+// import Counter from './components/counter/Counter';
 import { AppProviders } from './providers/AppProviders';
-import { MuiMode } from './components/mui/MuiMode';
-import { CounterTwo } from './components/counter-two/Counter-two';
+// import { MuiMode } from './components/mui/MuiMode';
+// import { CounterTwo } from './components/counter-two/Counter-two';
 import { Users } from './components/users/Users';
 
-const skills = ["HTML", "CSS", "JS"]
+// const skills = ["HTML", "CSS", "JS"]
 function App() {
   return (
     <AppProviders>

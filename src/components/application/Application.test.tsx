@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react"
 import { Application } from "./Application"
 
-describe('application ', () => {
+describe('application', () => {
     test('renders correctly', () => {
         render(<Application />)
 
@@ -58,8 +58,9 @@ describe('application ', () => {
         expect(checkbox).toBeInTheDocument()
 
         const button = screen.getByRole('button');
-        expect(button).toBeInTheDocument()
+        expect(button).toBeDisabled()
 
+       
 
     })
 })
