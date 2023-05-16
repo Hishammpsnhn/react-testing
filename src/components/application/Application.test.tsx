@@ -61,6 +61,6 @@ describe('application', () => {
     expect(checkbox).toBeInTheDocument()
 
     const button = screen.getByRole('button')
-    expect(button).toBeDisabled()
+    expect(button).not.toBeEnabled()
   })
 })
