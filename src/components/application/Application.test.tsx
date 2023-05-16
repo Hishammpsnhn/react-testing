@@ -8,6 +8,7 @@ describe('application', () => {
     const HeadingElement = screen.getByRole('heading', {
       level: 1,
     })
+
     expect(HeadingElement).toBeInTheDocument()
 
     const Heading1Element = screen.getByRole('heading', {
